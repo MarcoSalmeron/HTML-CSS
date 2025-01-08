@@ -1,0 +1,88 @@
+*{
+    /*Quitar Margenes aldocumento*/
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+}
+.titulo{
+    /*Centrar titulo*/
+    text-align: center;
+    font-size: 3.8rem;
+}
+.titulo span{
+    /*Formato de Titulo*/
+    font-size: 2rem;
+}
+body{
+    /*fuente externa para Body*/
+    font-family: "Playfair Display", serif;
+}
+.navegacion-principal{
+    /*Color al NAV y centrarlo*/
+    background-color: #128bdc;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 4rem;
+}
+.navegacion-principal a{
+    /*Agrandar los Links del NAV*/
+    text-decoration: none;
+    color: beige;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.navegacion-principal a:hover{
+    /*Estilo de Seleccion del NAV*/
+    color: black;
+    background-color: #dece10;
+}
+footer{
+    /*Centrar Texto del Footer*/
+    text-align: center;
+    background-color: #128bdc;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.1rem;
+}
+footer a{
+    /*Agrandar Liunks del Footer*/
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.terminos{
+    /*Juntar Texto con el Link*/
+    display: inline;
+    margin-right: 1.2rem;
+}
+footer a:hover{
+    /*Estilo de Seleccion del Link*/
+    text-decoration: underline;
+}
+.cards{
+    /*Centrar cards con un maximo de ancho*/
+    margin: 0 auto;
+    max-width: 100rem;
+}
+@media (max-width: 576px) {
+    /*Responsive para Celulares*/
+    body p{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .titulo span{
+        font-size: 0.5em;
+    }
+    .navegacion-principal a{
+        font-size: 1em;
+    }
+    footer a{
+        font-size: 1em;
+    }
+}

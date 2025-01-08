@@ -1,0 +1,125 @@
+*{
+    /*Quitar Margenes al documento*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*Agregar Fuente externa*/
+    font-family: "Playfair Display", serif;
+}
+h2{
+    /*Subtitulo Centrado*/
+    text-align: center;
+}
+.titulo{
+    /*Centrar Titulo*/
+    text-align: center;
+    font-size: 3.8rem;
+}
+.titulo span{
+    /*Formato en Titulo*/
+    font-size: 2rem;
+}
+.navegacion-principal{
+    /*Margen del Contrenedor del Nav*/
+    background-color: #128bdc;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 4rem;
+}
+.navegacion-principal a{
+    /*Quitar decoracion a los Links*/
+    text-decoration: none;
+    color: beige;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.navegacion-principal a:hover{
+    /*Estilo de Seleccion en NAV*/
+    color: black;
+    background-color: #dece10;
+}
+.carousel-caption{
+    /*Color Transparente para Carrusel*/
+    background-color: rgba(255, 165, 0, 0.5);
+    font-size: 2rem;
+}
+.container{
+    /*Ajustar Contenedor al Aside*/
+    display: flex;
+    font-size: 1.5rem;
+}
+.container a{
+    /*Link en columna*/
+display: block;
+padding: 2rem;
+text-decoration: none;
+}
+aside{
+    /*Formato del Aside*/
+    background-color: rgba(255, 165, 0, 0.5);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-left: 1.1rem;
+}
+aside a:hover{
+    text-decoration: underline;
+    color: white;
+}
+footer{
+    /*Color para Footer*/
+    background-color:  #128bdc;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 15px;
+    padding: 1.1rem;
+}
+footer a{
+    /*Resaltar Link de Footer*/
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.terminos{
+    /*Juntar Terminos con el link de footer*/
+    display: inline;
+    margin-right: 1.2rem;
+}
+footer a:hover{
+    /*Estilo de Seleccion en Link de Footer*/
+    text-decoration: underline;
+}
+.descrip{
+    /*Descripcion del Carrusel*/
+    margin: 0 auto;
+    max-height: 300px;
+    max-width: 610px;
+    border-radius: 10px;
+}
+@media (max-width: 576px) {
+    /*Responsive para Celulares*/
+    body p{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .titulo span{
+        font-size: 0.5em;
+    }
+    .navegacion-principal a{
+        font-size: 1em;
+    }
+    aside a,h3,svg{
+        font-size: 0.7em;
+    }
+    .descrip{
+        max-width: 300px;
+        font-size: 4em;
+    }
+    footer a{
+        font-size: 1em;
+    }
+}
